@@ -1,0 +1,19 @@
+Controllers/Home, Tarefa, User: Herda métodos da classe Controller, chamam a respectiva view passando os dados 
+obtivos através do acesso ao model;
+
+Core/db: Possui o banco de dados e os comandos SQL utilizado no SQLite;
+
+Core/App: Obtem a URL do Controller e verifica a sua exitencia;
+
+Core/Controller: Instancia um model e chama a view. Seus métodos são utilizados nos Controllers;
+
+Core/Database: Responsável pela conexão com o banco de dados e trata o comando sql;
+
+Models/Tarefa,User: Herda métodos de Database.php e contem métodos de consulta das respectivas tabelas ao banco de dados;
+
+View/user,tarefa,home: Mostra e monta a tela com os registros respectivos registros do banco;
+
+Application/autoload.php: carrega de forma automática todas as classes do diretório Application;
+
+public/index: É executado ao acessar o localhost, inclui o autoload.php e instancia o objeto App.
+
